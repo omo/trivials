@@ -14,6 +14,5 @@
 			     (replace-regexp-in-string "\\(Creating new post: \\)\\|\n" "" command-result)))
       (find-file filename)
       )))
-(define-key ctl-x-map "J" 'triv-octopress-new-post)
 
 (provide 'trivials)

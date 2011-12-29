@@ -6,7 +6,7 @@
   (interactive "MTitle: ")
   (let ((command-str (format "bash -l -c 'source $HOME/.rvm/scripts/rvm && rvm use 1.9.2 > /dev/null && cd %s && rake new_post[\"%s\"]'" 
 			    triv-octopress-workdir title))
-	(command-result) (flename))
+	(command-result) (filename))
     (progn
       (message command-str)
       (setq command-result (shell-command-to-string command-str))
